@@ -1,9 +1,5 @@
 import pandas as pd
 import blocksci
-from distutils.version import LooseVersion
-
-if LooseVersion(blocksci.VERSION) < LooseVersion("0.6"):
-    raise ImportError("Utils require BlockSci v0.6 or newer.")
 
 
 def date_first_sent(addr):
